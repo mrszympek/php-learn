@@ -1,11 +1,9 @@
 <?php
 
-class Car {
+class Car extends Vehicle {
 
-    private $brand = null;
     private $type = null;
     private $productionDate = null;
-    private $owner = null;
 
     public function __construct($brand, $productionDate = false) {
         $this->setBrand($brand);
@@ -13,11 +11,6 @@ class Car {
         if($productionDate) {
             $this->setProductionDate($productionDate);
         }
-    }
-
-
-    public function setBrand($brand) {
-        $this->brand = $brand;
     }
 
     public function setType($type) {
@@ -28,9 +21,7 @@ class Car {
         $this->productionDate = $date;
     }
 
-     public function setOwner($owner) {
-        $this->owner = $owner;
-    }
+    
 }
 
 

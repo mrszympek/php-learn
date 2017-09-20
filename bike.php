@@ -1,10 +1,10 @@
 <?php
 
-class Bike {
+class Bike extends Vehicle {
 
     private $productionDate;
-    private $brand;
-    private $owner;
+
+    protected $wheelsCount = 2;
 
     public function __construct($brand) {
         $this->setBrand($brand);
@@ -20,13 +20,5 @@ class Bike {
         }
 
         return false;
-    }
-
-     public function setOwner($owner) {
-        $this->owner = $owner;
-    }
-
-    public function setBrand($brand) {
-        $this->brand = $brand;
     }
 }
