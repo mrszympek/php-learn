@@ -3,6 +3,7 @@
 
 require 'car.php';
 require 'person.php';
+require 'bike.php';
 
 $car = new Car;
 $car->setBrand('Audi');
@@ -23,5 +24,12 @@ $kasia->setName('Kasia');
 $kasia->setBirthDate(2005);
 $kasia->setBirthPlace('Zywiec');
 
+
+$bike1 = new Bike;
+$bike1->setProductionDate(2000);
+echo $bike1->getAge();
+$bike1->setOwner('Marian');
+$bike1->setBrand('Giant');
+
 echo '<pre>';
-var_dump($kasia);
+var_dump($bike1);
