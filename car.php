@@ -7,6 +7,14 @@ class Car {
     private $productionDate = null;
     private $owner = null;
 
+    public function __construct($brand, $productionDate = false) {
+        $this->setBrand($brand);
+
+        if($productionDate) {
+            $this->setProductionDate($productionDate);
+        }
+    }
+
 
     public function setBrand($brand) {
         $this->brand = $brand;

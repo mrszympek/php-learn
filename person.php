@@ -6,6 +6,14 @@ class Person {
     private $birthDate = null;
     private $birthPlace = null;
 
+    public function __construct($name, $birthDate = false) {
+        $this->setName($name);
+
+        if($birthDate) {
+            $this->setBirthDate($birthDate);
+        }
+    }
+
     public function setName($name){
         $this->name = $name;
     }
