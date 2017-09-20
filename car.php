@@ -1,36 +1,28 @@
 <?php
 
-class car {
+class Car {
 
-    public $brand = '';
-    public $type = '';
-    public $production_date = null;
-    public $owner = '';
+    private $brand = null;
+    private $type = null;
+    private $productionDate = null;
+    private $owner = null;
 
 
-    public function set_brand($new_brand) {
-        $brand = $new_brand;
-        echo $brand . '<br>';
+    public function setBrand($brand) {
+        $this->brand = $brand;
     }
 
-    public function set_type($new_type) {
-        $type = $new_type;
-        echo $type . '<br>';
-
+    public function setType($type) {
+        $this->type = $type;
     }
 
-     public function set_production_date($new_date) {
-        $production_date = $new_date;
-        echo $production_date . '<br>';
-
+     public function setProductionDate($date) {
+        $this->productionDate = $date;
     }
 
-     public function set_owner($new_owner) {
-        $owner = $new_owner;
-        echo $owner . '<br>'; 
-
+     public function setOwner($owner) {
+        $this->owner = $owner;
     }
-
 }
 
 
